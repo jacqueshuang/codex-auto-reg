@@ -40,8 +40,8 @@ def _load_config():
         "ak_file": "ak.txt",
         "rk_file": "rk.txt",
         "token_json_dir": "codex_tokens",
-        "upload_api_url": "http://192.168.2.3:8317/v0/management/auth-files",
-        "upload_api_token": "J-1017504510",
+      #  "upload_api_url": "https://cpa.sk29.pw/v0/management/auth-files",
+      #  "upload_api_token": "J-1017504510",
     }
 
     config_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "config.json")
