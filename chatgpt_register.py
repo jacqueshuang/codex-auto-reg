@@ -41,7 +41,9 @@ def _load_config():
         "rk_file": "rk.txt",
         "token_json_dir": "codex_tokens",
       #  "upload_api_url": "https://cpa.sk29.pw/v0/management/auth-files",
+        "upload_api_url": "",
       #  "upload_api_token": "J-1017504510",
+        "upload_api_token": "",
     }
 
     config_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "config.json")
@@ -503,7 +505,7 @@ def create_temp_email():
     chars = string.ascii_lowercase + string.digits
     length = random.randint(8, 13)
     email_local = "".join(random.choice(chars) for _ in range(length))
-    email = f"codex{email_local}@mail.sk29.pw"
+    email = f"Tcode{email_local}@mail.sk29.pw"
     password = _generate_password()
 
     api_base = DUCKMAIL_API_BASE.rstrip("/")
@@ -743,7 +745,7 @@ class ChatGPTRegister:
         chars = string.ascii_lowercase + string.digits
         length = random.randint(8, 13)
         email_local = "".join(random.choice(chars) for _ in range(length))
-        email = f"codex{email_local}@mail.sk29.pw"#duckmail.sbs
+        email = f"Tcode{email_local}@mail.sk29.pw"#duckmail.sbs
         password = _generate_password()
 
         api_base = DUCKMAIL_API_BASE.rstrip("/")
